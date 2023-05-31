@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto+Slab:wght@100&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Outfit", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.3;
+        color: white;
+      }
+
+      h1 {
+        font-family: "Outfit", sans-serif;
+        color: #333;
+        text-align: center;
+        font-size: 6rem;
+      }
+
+      h2 {
+        font-family: "Outfit", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 3rem;
+      }
+
+      p {
+        font-family: "Outfit", sans-serif;
+        color: white;
+        text-align: center;
+      }
+
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-bottom-style: groove;
+        border-color: #333;
+        background: white;
+        z-index: 10;
+      }
+
+      #front_page {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(90, 90, 90, 0.3);
+      }
+
+      .mapa {
+        width: 65.6vw;
+        height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: 37vw;
+      }
+
+      .info_sq {
+        position: fixed;
+        right: 20px;
+        bottom: 250px;
+        width: 20vw;
+        height: 40vh;
+        border-radius: 10px;
+        background-color: rgb(129, 114, 114);
+      }
+
+      area:hover {
+        cursor: pointer;
+      }
+
+      area[title]:hover:after {
+        content: attr(title);
+        padding: 20px;
+        color: #fff;
+        background-color: #333;
+        position: fixed;
+        z-index: 9999;
+        left: 81%;
+        top: 46%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        font-size: 25px;
+      }
+
+      .info_sq {
+        position: fixed;
+        padding-top: 35px;
+        padding-right: 30px;
+        padding-left: 30px;
+        right: 26px;
+        top: 250px;
+        width: 35vw;
+        height: 18vh;
+        border-radius: 10px;
+        background-color: #444;
+      }
+    </style>
+
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </head>
+
+  <body>
+      <div id="bohol-map">
+        <img
+          class="mapa"
+          src="https://ppdo.bohol.gov.ph/ppdofiles/Maps/JPG%20Maps/MunicipalMaps/Catigbian/StatisticalMaps/PDMS/Catigbian_PDMS_IncThresh_A4.jpg"
+          alt="map"
+          usemap="#map"
+        />
+
+        <map name="map">
+          <area
+            shape="circle"
+            coords="350, 220, 30"
+            alt="Alegria"
+            title="Alegria - Population: 1,301 Households: 307 "
+            href="https://www.philatlas.com/visayas/r07/bohol/catigbian/alegria.html"
+          />
+          <area
+          shape="circle"
+          coords="255, 500, 30"
+          alt="Ambuan"
+          title="Ambuan - Population: 	1,235 Households: 282 "
+          href="https://www.philatlas.com/visayas/r07/bohol/catigbian/ambuan.html"
+        />
+        <area
+        shape="circle"
+        coords="380, 315, 30"
+        alt="Baang"
+        title="Baang - Population: 	1,435 Households: 316"
+        href="https://www.philatlas.com/visayas/r07/bohol/catigbian/baang.html"
+      />
+      <area
+      shape="circle"
+      coords="490, 370, 30"
+      alt="Bagtic"
+      title="Bagtic - Population: 1,051 Households: 221 "
+      href="https://www.philatlas.com/visayas/r07/bohol/catigbian/bagtic.html"
+    />
+    <area
+    shape="circle"
+    coords="290, 380, 30"
+    alt="Bongbong"
+    title="Bongbong - Population: 616 Households: 140"
+    href="https://www.philatlas.com/visayas/r07/bohol/catigbian/bongbong.html	"
+  />
+  <area
+  shape="circle"
+  coords="380, 400, 30"
+  alt="Cambalian"
+  title="Cambalian - Population: 854  Households: 171"
+  href="https://www.philatlas.com/visayas/r07/bohol/catigbian/cambailan.html"
+  />
+  <area
+  shape="circle"
+  coords="215, 170, 40"
+  alt="Candumayao"
+  title="Candumayao - Population: 1,605 Households: 381"
+  href="https://www.philatlas.com/visayas/r07/bohol/catigbian/candumayao.html"
+/>
+<area
+shape="circle"
+coords="340, 120, 40"
+alt="Causwagan Norte"
+title="Causwagan Norte- Population: 1,910 Households: 387"
+href="https://www.philatlas.com/visayas/r07/bohol/catigbian/causwagan-norte.html"
+/>
+<area
+        shape="circle"
+        coords="430, 480, 35"
+        alt="Hagbuaya"
+        title="Hagbuaya - Population: 940 Households: 198"
+        href="https://www.philatlas.com/visayas/r07/bohol/catigbian/hagbuaya.html"
+      />
+      <area
+        shape="circle"
+        coords="130, 470, 30"
+        alt="Haguilanan"
+        title="Haguilanan - Population: 1,098 Households: 244"
+        href="https://www.philatlas.com/visayas/r07/bohol/catigbian/haguilanan.html"
+      />
+      <area
+        shape="circle"
+        coords="620, 360, 30"
+        alt="Cang-iras"
+        title="Cang-iras - Population: 737 Households: 182 "
+        href="https://www.philatlas.com/visayas/r07/bohol/catigbian/cang-iras.html"
+      />
+      <area
+        shape="circle"
+        coords="125, 150, 30"
+        alt="Libertad Sur"
+        title="Libertad Sur - Population: 409  Households: 59"
+        href="https://www.philatlas.com/visayas/r07/bohol/catigbian/libertad-sur.html"
+      />
+      <area
+        shape="circle"
+        coords="460, 280, 30"
+        alt="Liboron"
+        title="Liboron - Population: 1,039  Households: 219"
+        href="https://www.philatlas.com/visayas/r07/bohol/catigbian/liboron.html"
+      />
+      <area
+        shape="circle"
+        coords="570, 460, 40"
+        alt="Mahayag Norte"
+        title="Mahayag Norte - Population: 650  Households: 122"
+        href="https://www.philatlas.com/visayas/r07/bohol/catigbian/mahayag-norte.html"
+      />
+      <area
+        shape="circle"
+        coords="540, 520, 40"
+        alt="Mahayag Sur"
+        title="Mahayag Sur - Population: 290  Households: 62"
+        href="https://www.philatlas.com/visayas/r07/bohol/catigbian/mahayag-sur.html"
+      />
+      <area
+        shape="circle"
+        coords="580, 280, 30"
+        alt="Maitum"
+        title="Maitum - Population: 881  Households: 209"
+        href="https://www.philatlas.com/visayas/r07/bohol/catigbian/maitum.html"
+      />
+      <area
+        shape="circle"
+        coords="460, 130, 40"
+        alt="Mantasida"
+        title="Mantasida - Population: 1,140  Households: 218"
+        href="https://www.philatlas.com/visayas/r07/bohol/catigbian/mantasida.html"
+      />
+      <area
+        shape="circle"
+        coords="235, 280, 30"
+        alt="Poblacion"
+        title="Poblacion - Population: 2,176 Households: 405"
+        href="https://www.philatlas.com/visayas/r07/bohol/catigbian/poblacion.html"
+      />
+      <area
+        shape="circle"
+        coords="155, 320, 40"
+        alt="Poblacion Weste"
+        title="Poblacion Weste - Population: 1,553  Households: 358"
+        href="https://www.philatlas.com/visayas/r07/bohol/catigbian/poblacion-weste.html"
+      />
+      <area
+        shape="circle"
+        coords="110, 248, 30"
+        alt="Rizal"
+        title="Rizal - Population: 759  Households: 161"
+        href="https://www.philatlas.com/visayas/r07/bohol/catigbian/rizal.html"
+      />
+      <area
+        shape="circle"
+        coords="145, 400, 40"
+        alt="Sinakayanan"
+        title="Sinakayanan - Population: 1,008  Households: 211"
+        href="https://www.philatlas.com/visayas/r07/bohol/catigbian/sinakayanan.html"
+      />
+      <area
+        shape="circle"
+        coords="480, 210, 35"
+        alt="Triple Union"
+        title="Triple Union - Population: 1,118  Households: 217"
+        href="https://www.philatlas.com/visayas/r07/bohol/catigbian/triple-union.html"
+      />
+           
+        </map>
+      </div>
+    </section>
+  </body>
+</html>
