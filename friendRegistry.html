@@ -16,10 +16,12 @@
             max-width: 500px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
-            border: 1px solid #ccc;
+            background-color: #060606;
+            opacity: 5.5;
+            color: #007bff;
+            border: 1px solid #007bff;
             border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            box-shadow: ridge -2px 2px 2px rgba(252, 249, 249, 0.1);
         }
         h1 {
             text-align: center;
@@ -35,7 +37,7 @@
         input[type="text"], input[type="number"], select, textarea {
             width: 100%;
             padding: 10px;
-            border: 1px ridgeq #ccc;
+            border: 1px ridge #ccc;
             border-radius: 5px;
         }
         input[type="checkbox"] {
@@ -60,7 +62,7 @@
 <body>
     <div class="container">
         <h1>Friend Registry</h1>
-        <form id="friendForm" action="https://script.google.com/macros/s/AKfycbzAVkdR9RXX7gAu7uccWScbumUDHY9rKuGHIyJwQupp9klT1upNeDd8CixGRTZqkGpO/exec" method='post'>
+        <form id="friendForm" action="https://script.google.com/macros/s/AKfycbw9KatUV49vxATWl3UxC_T7cVGT1egXLrhXflTgNGaIEuarvPiyoPUCiMiZedNHBUy_/exec" method='post'>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="age">Age:</label>
@@ -90,5 +92,5 @@
         </form>
     </div>
     <script>
-        document.getElementById("friendForm").addEventListener("submit", function(event) {
-            event.preventDefault();
+        document.getElementById("friendForm").addEventListener("submit"), function(event) {
+            event.preventDefault()}
